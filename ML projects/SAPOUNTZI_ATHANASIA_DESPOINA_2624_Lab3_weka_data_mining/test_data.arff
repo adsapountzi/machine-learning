@@ -1,0 +1,21 @@
+%TEST DATA SET
+
+% data set with the given attributes and leave the class attribute as “?“, in order to predict the class value.
+
+@relation 'cpu'
+
+@attribute vendor { adviser, amdahl, apollo, basf, bti, burroughs, c.r.d, cdc, cambex, dec, dg, formation, four-phase, gould, hp, harris, honeywell, ibm, ipl, magnuson, microdata, nas, ncr, nixdorf, perkin-elmer, prime, siemens, sperry, sratus, wang}
+@attribute MYCT real
+@attribute MMIN real
+@attribute MMAX real
+@attribute CACH real
+@attribute CHMIN real
+@attribute CHMAX real
+@attribute class real
+
+@data
+
+honeywell,300,1000,16000,8,2,112,73
+cambex,50,1000,8000,8,3,5,41
+%c.r.d,320,256,6000,2,1,6, ?
+hp,105,256,2000,0,3,10,20
